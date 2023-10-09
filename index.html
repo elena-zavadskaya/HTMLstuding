@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Завадская Елена">
+        <meta name="description" content="Тестовая страница">
+        <meta name="keywords" content="тест,проверка,html">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        <a name="bottomOfPage"></a>
+        <!-- Это
+            комментарий -->
+        
+        
+        <!-- Заголовки -->
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        <h3>Заголовок 3</h3>
+        <h4>Заголовок 4</h4>
+        <h5>Заголовок 5</h5>
+        <h6>Заголовок 6</h6>
+        
+        
+        <!-- Абзацы -->
+        <p>Просто <b>текст</b></p>
+        <p>Просто <i>текст</i></p>
+        <p>Просто <strike>текст</strike></p>
+        
+        
+        <!-- Верхний и нижний колонтитулы -->
+        a<sup>2</sup><br><hr> <!-- br - переход на новую строку, hr - разделительная линия -->
+        H<sub>2</sub>O
+        
+        
+        <!-- Аббревитуры -->
+        <abbr title="HyperText Markup Language — язык гипертекстовой разметки">HTML</abbr> <!-- Аттрибут title позволяет увидеть пояснение к элементу страницы -->
+        
+        
+        <!-- Адрес -->
+        <address>
+            Seaatle, USA
+        </address>
+        
+        
+        <!-- Изменение размера шрифта -->
+        та<big>почка</big><br>
+        <small>дог</small>мат
+        
+        
+        <!-- Сохранение всех отступов, пробелов и т.д. -->
+<pre>function some() {
+    return "Some" 
+}</pre>
+        
+        
+        <!-- Запись кода -->
+        <code>let x = 0;</code>
+        
+        
+        <!-- Списки -->
+        <ol start="1" type="I">
+            <li>Купи молоко</li>
+            <li>Купи картошку</li>
+            <li>Купи хлеб</li>
+            <li>Купи машину</li>
+        </ol>
+        
+        <ul type="square">
+            <li>Купи молоко</li>
+            <li>Купи картошку</li>
+            <li>Купи хлеб</li>
+            <li>Купи машину</li>
+        </ul>
+        
+        
+        <!-- Ссылки -->
+        <a href="https://google.com" target="_blank" title="Нажми на меня">Перейти в Google</a><br> <!-- target="_blank" - ссылка будет открываться в новой вкладке -->
+        
+        <a href="about.html" target="_blank">Перейти на страницу про нас</a><br>
+        
+        <a href="#bottomOfPage">Вверх</a><br>
+        
+        <a href="mailto:ele.zavadskaya.na@gmail.com" target="_blank">Написать на почту</a><br>
+        
+        
+        <!-- Работа с изображениями -->
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/34175/pub_5cea2361585c2f00b5c9cb0b_5cea310a752e5b00b25b9c01/scale_1200" width="10%" title="Навели на меня" alt="Милый котик"><br>
+        
+        <img src="images/angry_rabbit.jpg" width="20%" alt="Злобный заяц"><br>
+        
+        
+        <!-- Таблицы -->
+        <table border="5" width="10%">
+            
+            <thead> <!-- Заголовок -->
+                <tr>
+                    <th>Имя</th> <!-- Жирный шрифт -->
+                    <th>Фимилия</th>
+                </tr>
+            </thead>
+            
+            <tbody align="center">
+                <tr>
+                    <td>John</td> <!-- Обычный шрифт -->
+                    <td>Dale</td>
+                </tr>
+                <tr>
+                    <td>John2</td>
+                    <td>Dale</td>
+                </tr>
+                <tr>
+                    <td>John3</td>
+                    <td>Dale</td>
+                </tr>
+                <tr>
+                    <td>John4</td>
+                    <td>Dale</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td>Last</td>
+                    <td>One</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+        
+        
+        <!-- Подключение JavaScript-файла -->
+        <script src="js/main.js"></script>
+        
+        
+        <!-- Теги div и span -->
+        <!-- Эти теги нужны для использования стилей из CSS.
+        Сами по себе они не несут никакой сути.
+        Единственное, каждый тег div переносит текст на новую строку - он блочный
+        А span - строчный-->
+        <div>Просто текст</div>
+        <div>Просто <span>текст</span></div>
+        
+        
+        <!-- Создание HTML-форм и полей для ввода -->
+        <form action="" method="post">
+            <label for="user_name">Введите имя</label>
+            <input type="text" placeholder="Поле для ввода" value="Что-то" maxlength="5" name="user_name" id="user_name"><br>
+            
+            <input type="password" placeholder="Введите пароль"><br><br>
+            <input type="email" placeholder="Введите e-mail"><br><br>
+            <input type="url" placeholder="Введите url"><br><br>
+            <input type="checkbox"><br><br>
+            <input type="radio" name="state">
+            <input type="radio" name="state"><br><br>
+            <input type="file"><br><br>
+            <select multiple>
+                <option>BMW</option>
+                <option selected>Audi</option>
+                <option>Mercedes</option>
+            </select><br><br>
+            <textarea placeholder="Введите текст"></textarea><br><br>
+            <input type="button" value="Какая-то кнопка">
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить форму"><br><br><br>
+            <!-- Некоторые браузеры не поддерживают следующие типы -->
+            <input type="color"><br><br>
+            <input type="date"><br><br>
+            <input type="time"><br><br>
+            <input type="datetime"><br><br><br>
+        </form>
+        
+        
+        <!-- Специальные HTML5-теги -->
+        <header>Шапка</header>
+        <main>Основная часть сайта</main>
+        <aside>Боковая часть сайта</aside>
+        <footer>Футер</footer>
+        
+        <progress max="100" value="25">Загружено на 25%</progress>
+        
+        <details>
+            <summary>Подробнее</summary>
+            Являясь всего лишь частью общей картины, предприниматели в сети интернет объединены в целые кластеры себе подобных. Современные технологии достигли такого уровня, что глубокий уровень погружения обеспечивает актуальность новых предложений. В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, разоблачены.
+        </details>
+        
+        
+    </body>
+</html>
